@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ice Cream World</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://dnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+🍦 IceCream World
+</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#offer">Offers</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="content">
+
+<h1>
+Taste The Happiness
+</h1>
+
+<p>
+Fresh • Delicious • Creamy
+</p>
+
+<button>Order Now</button>
+<div class="video-section">
+
+    <video autoplay muted loop controls>
+        <source src="videos/icecream.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="search">
+
+<input
+type="text"
+id="search"
+placeholder="Search your favourite flavour...">
+
+</section>
+
+<section class="menu" id="menu">
+
+<div class="card">
+
+<div class="heart">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<img src="images/vanilla.jpg">
+
+<h2>Vanilla</h2>
+
+<h3>₹120</h3>
+
+<div class="rating">
+
+★★★★★
+
+</div>
+
+<button onclick="openOrderForm('Vanilla')">Order Now</button>
+
+</div>
+
+<div class="card">
+
+<div class="heart">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<img src="images/chocolate.jpg">
+
+<h2>Chocolate</h2>
+
+<h3>₹150</h3>
+
+<div class="rating">
+
+★★★★★
+
+</div>
+
+<button onclick="openOrderForm('Chocolate')">
+Order Now
+</button>
+
+</div>
+
+<div class="card">
+
+<div class="heart">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<img src="images/strawberry.jpg">
+
+<h2>Strawberry</h2>
+
+<h3>₹140</h3>
+
+<div class="rating">
+
+★★★★★
+
+</div>
+
+<button onclick="openOrderForm('Strawberry')">
+Order Now
+</button>
+
+</div>
+
+<div class="card">
+
+<div class="heart">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<img src="images/mango.jpg">
+
+<h2>Mango</h2>
+
+<h3>₹160</h3>
+
+<div class="rating">
+
+★★★★★
+
+</div>
+
+<button onclick="openOrderForm('Mango')">
+Order Now
+</button>
+
+</div>
+
+<div class="card">
+
+<div class="heart">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<img src="images/oreo.jpg">
+
+<h2>Oreo</h2>
+
+<h3>₹180</h3>
+
+<div class="rating">
+
+★★★★★
+
+</div>
+
+<button onclick="openOrderForm('Oreo')">
+Order Now
+</button>
+
+</div>
+
+<div class="card">
+
+<div class="heart">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<img src="images/butterscotch.jpg">
+
+<h2>Butterscotch</h2>
+
+<h3>₹170</h3>
+
+<div class="rating">
+
+★★★★★
+
+</div>
+
+<button onclick="openOrderForm('Butterscotch')">
+Order Now
+</button>
+
+</div>
+<div class="card">
+
+    <div class="heart">
+        <i class="fa-solid fa-heart"></i>
+    </div>
+
+    <img src="images/blueberry.jpg" alt="Blueberry Ice Cream">
+
+    <h2>Blueberry</h2>
+
+    <h3>₹180</h3>
+
+    <div class="rating">
+        ★★★★★
+    </div>
+
+    <button onclick="openOrderForm('Blueberry')">
+        Order Now
+    </button>
+
+</div>
+<div class="card">
+
+    <div class="heart">
+        <i class="fa-solid fa-heart"></i>
+    </div>
+
+    <img src="images/cookiescream.jpg" alt="Cookies & Cream">
+
+    <h2>Cookies & Cream</h2>
+
+    <h3>₹200</h3>
+
+    <div class="rating">
+        ★★★★★
+    </div>
+
+    <button onclick="openOrderForm('Cookies & Cream')">
+        Order Now
+    </button>
+
+</div>
+
+</section>
+
+<section id="offer">
+
+<h1>🔥 Today's Special Offer</h1>
+
+<div class="offer-box">
+
+Buy 2 Scoops & Get 1 Free
+
+</div>
+
+</section>
+
+<footer id="contact">
+
+<h2>🍦 IceCream World</h2>
+
+<p>
+Main Road, City Center
+</p>
+
+<p>
+📞 +91 9876543210
+</p>
+
+<p>
+Open 10AM - 11PM
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+.video-section{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.video-section video{
+
+    width:80%;
+
+    max-width:900px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.3);
+
+    transition:0.5s;
+
+}
+
+.video-section video:hover{
+
+    transform:scale(1.03);
+
+}
+<div id="orderPopup" class="popup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closeOrderForm()">&times;</span>
+
+        <h2>🍦 Place Your Order</h2>
+
+        <form id="orderForm">
+
+            <input type="text" id="customerName" placeholder="Enter Your Name" required>
+
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+
+            <textarea id="address" placeholder="Delivery Address" required></textarea>
+
+            <input type="text" id="flavour" readonly>
+
+            <input type="number" id="quantity" min="1" value="1">
+
+            <button type="submit">Confirm Order</button>
+
+        </form>
+
+    </div>
+
+</div>
+<div id="successPopup" class="success-popup">
+
+    <div class="success-card">
+
+        <div class="tick-circle">
+            ✔
+        </div>
+
+        <h2>Order Confirmed!</h2>
+
+        <p id="orderId"></p>
+
+        <p id="orderDetails"></p>
+
+        <p id="billAmount"></p>
+
+        <p>🚚 Estimated Delivery : <b>20-30 Minutes</b></p>
+
+        <div class="btn-box">
+
+            <button class="track-btn" onclick="trackOrder()">
+                Track Order
+            </button>
+
+            <button class="close-btn" onclick="closeSuccessPopup()">
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="confetti"></div>
+
+</div>
+</body>
+</html>
